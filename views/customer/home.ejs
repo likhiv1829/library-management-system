@@ -1,0 +1,27 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/customer.css">
+    <title>Customer Home</title>
+    </head>
+
+    <body background="https://w0.peakpx.com/wallpaper/591/641/HD-wallpaper-light-glare-brown-wavy-lines-in-dark-brown-background-brown-aesthetic.jpg">
+
+        <%-include('partials/navbar.html')%>
+        <div class="container-fluid" style="background-color:#5F4330;">
+            <div class="row">
+                <%-include('partials/sidebar.html')%>
+                <div class="col-md-10 content">
+                    <p class="display-2">Welcome to Home</p>
+                    <div class="alert alert-primary" role="alert">
+                        Total books borrowed: <span style="float: right;"><%=tbbbc%></span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Books borrowed in last 7 days: <span style="float: right;">7</span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Books borrowed in last 30 days: <span style="float: right;">7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%-include('../partials/footer.html')%>
